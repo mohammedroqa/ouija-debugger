@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Run tests on source save",
+  "description": "When service or infra code changes, run the test suite and report failures.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["services/**/*.ts", "infra/lib/**/*.ts"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A source file changed. Run `npm test` and `npm run synth`. If anything fails, explain the cause and propose a minimal fix."
+  }
+}

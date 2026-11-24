@@ -1,0 +1,6 @@
+node_modules/
+cdk.out/
+dist/
+.env
+*.log
+# NOTE: never ignore /.kiro (required for Kiroween submission)

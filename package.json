@@ -1,0 +1,10 @@
+{
+  "name": "ouija-debugger",
+  "private": true,
+  "workspaces": ["infra", "services/*"],
+  "scripts": {
+    "test": "npm run test --workspaces --if-present",
+    "synth": "npm run synth -w infra",
+    "deploy": "npm run deploy -w infra"
+  }
+}
